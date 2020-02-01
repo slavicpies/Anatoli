@@ -3,7 +3,7 @@ extends Actor
 func _physics_process(delta):
 	var direction: = get_direction()
 	velocity = calculate_move_velocity(velocity, direction, speed)
-	velocity = move_and_slide(velocity, Vector2.UP)
+	velocity = move_and_slide(velocity, FLOOR_NORMAL)
 
 
 func get_direction() -> Vector2:
@@ -14,8 +14,8 @@ func get_direction() -> Vector2:
 
 func calculate_move_velocity(
 		linear_velocity: Vector2,
-		speed: Vector2,
-		direction: Vector2
+		direction: Vector2,
+		speed: Vector2
 	) -> Vector2:
 	var new_velocity: = linear_velocity
 	new_velocity.x = speed.x * direction.x
