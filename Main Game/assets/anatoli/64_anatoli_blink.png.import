@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/64_anatoli_sideways.png-bdd108963ad5c0801ca88decd598fe3a.stex"
+path="res://.import/64_anatoli_blink.png-e87266b8193469b92befeb44e994bd9c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/anatoli/64_anatoli_sideways.png"
-dest_files=[ "res://.import/64_anatoli_sideways.png-bdd108963ad5c0801ca88decd598fe3a.stex" ]
+source_file="res://assets/anatoli/64_anatoli_blink.png"
+dest_files=[ "res://.import/64_anatoli_blink.png-e87266b8193469b92befeb44e994bd9c.stex" ]
 
 [params]
 
