@@ -4,7 +4,7 @@
 [ext_resource path="res://src/actors/Anatoli.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 22, 59 )
+extents = Vector2( 23.7864, 59 )
 
 [node name="Anatoli" type="KinematicBody2D"]
 collision_mask = 8
@@ -17,5 +17,13 @@ scale = Vector2( 0.200195, 0.200195 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -2, -61 )
+position = Vector2( -2.30736, -60.6926 )
 shape = SubResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 0.307358, -60.8567 )
+current = true
+zoom = Vector2( 0.7, 0.7 )
+limit_left = 0
+limit_top = 0
+limit_right = 3000
