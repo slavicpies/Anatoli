@@ -32,6 +32,11 @@ animations = [ {
 "name": "Hurt",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 11 ) ],
+"loop": true,
+"name": "Fall",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 9 ) ],
 "loop": false,
 "name": "Walk",
@@ -52,19 +57,14 @@ animations = [ {
 "name": "Crouch",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 14 ), ExtResource( 14 ), ExtResource( 14 ), ExtResource( 14 ) ],
-"loop": false,
-"name": "Stand",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 4 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": false,
 "name": "Turn",
 "speed": 30.0
 }, {
-"frames": [ ExtResource( 11 ) ],
-"loop": true,
-"name": "Fall",
+"frames": [ ExtResource( 14 ), ExtResource( 14 ), ExtResource( 14 ), ExtResource( 14 ) ],
+"loop": false,
+"name": "Stand",
 "speed": 5.0
 } ]
 
@@ -79,7 +79,7 @@ script = ExtResource( 2 )
 position = Vector2( 0, -32 )
 scale = Vector2( 0.0994893, 0.0994893 )
 frames = SubResource( 1 )
-animation = "Stand"
+animation = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0.0356483, -29.4881 )
@@ -92,3 +92,5 @@ zoom = Vector2( 0.7, 0.7 )
 limit_left = 0
 limit_top = 0
 limit_right = 3000
+smoothing_enabled = true
+offset_v = -0.4
