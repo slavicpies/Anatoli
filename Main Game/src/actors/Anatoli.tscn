@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://assets/anatoli/64_anatoli_idle3.png" type="Texture" id=1]
 [ext_resource path="res://src/actors/Anatoli.gd" type="Script" id=2]
@@ -8,6 +8,12 @@
 [ext_resource path="res://assets/anatoli/64_anatoli_sideways1.png" type="Texture" id=6]
 [ext_resource path="res://assets/anatoli/64_anatoli_sideways2.png" type="Texture" id=7]
 [ext_resource path="res://assets/anatoli/64_anatoli_blink.png" type="Texture" id=8]
+[ext_resource path="res://assets/anatoli/64_anatoli_walkph.png" type="Texture" id=9]
+[ext_resource path="res://assets/anatoli/64_anatoli_runph.png" type="Texture" id=10]
+[ext_resource path="res://assets/anatoli/64_anatoli_fallph.png" type="Texture" id=11]
+[ext_resource path="res://assets/anatoli/64_anatoli_jumpph.png" type="Texture" id=12]
+[ext_resource path="res://assets/anatoli/64_anatoli_croucph.png" type="Texture" id=13]
+[ext_resource path="res://assets/anatoli/64_anatoli_standph.png" type="Texture" id=14]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -16,20 +22,50 @@ animations = [ {
 "name": "Idle",
 "speed": 4.0
 }, {
-"frames": [ ExtResource( 4 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"frames": [ ExtResource( 12 ) ],
 "loop": true,
-"name": "Turning",
-"speed": 4.0
-}, {
-"frames": [  ],
-"loop": true,
-"name": "Sprinting",
-"speed": 4.0
+"name": "Jump",
+"speed": 5.0
 }, {
 "frames": [  ],
 "loop": false,
-"name": "Walking",
+"name": "Hurt",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ) ],
+"loop": false,
+"name": "Walk",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": false,
+"name": "Dead",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 10 ), ExtResource( 10 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "Sprint",
 "speed": 4.0
+}, {
+"frames": [ ExtResource( 13 ) ],
+"loop": false,
+"name": "Crouch",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 14 ), ExtResource( 14 ), ExtResource( 14 ) ],
+"loop": false,
+"name": "Stand",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": false,
+"name": "Turn",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 11 ) ],
+"loop": true,
+"name": "Fall",
+"speed": 5.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
@@ -38,15 +74,12 @@ extents = Vector2( 10.9433, 29.3316 )
 [node name="Anatoli" type="KinematicBody2D"]
 collision_mask = 8
 script = ExtResource( 2 )
-gravity = 500.0
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, -32 )
 scale = Vector2( 0.0994893, 0.0994893 )
 frames = SubResource( 1 )
-animation = "Idle"
-frame = 1
-playing = true
+animation = "Stand"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0.0356483, -29.4881 )

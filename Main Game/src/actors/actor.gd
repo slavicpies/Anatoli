@@ -1,12 +1,12 @@
-extends KinematicBody2D
-class_name Actor
+#extends KinematicBody2D
+#class_name Actor
 
-const FLOOR_NORMAL: = Vector2.UP
+#const GRAVITY = 10
+#const FLOOR = Vector2(0, -1)
 
-export var speed: = Vector2(300.0, 400.0)
-export var gravity: = 2000.0
+#var on_ground = false
+#var velocity = Vector2()
 
-var velocity: = Vector2.ZERO
-
-
-
+#func _physics_process(delta):
+	
+	#velocity = move_and_slide(velocity, FLOOR)
