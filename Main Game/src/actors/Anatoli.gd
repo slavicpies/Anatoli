@@ -9,7 +9,12 @@ var velocity = Vector2()
 
 func _physics_process(delta):
 	
-	if Input.is_action_pressed("move_right"):
+	
+	
+	if Input.is_action_pressed("move_right") and Input.is_action_pressed("move_left"):
+		velocity.x = 0
+		$AnimatedSprite.play("Idle")
+	elif Input.is_action_pressed("move_right"):
 		velocity.x = SPEED
 		$AnimatedSprite.play("Turn")
 		$AnimatedSprite.flip_h = false
@@ -17,9 +22,6 @@ func _physics_process(delta):
 		velocity.x = -SPEED
 		$AnimatedSprite.play("Turn")
 		$AnimatedSprite.flip_h = true
-	elif Input.is_action_pressed("move_right") and Input.is_action_pressed("move_left"):
-		velocity.x = 0
-		$AnimatedSprite.play("Idle")
 	else:
 		velocity.x = 0
 		$AnimatedSprite.play("Idle")
