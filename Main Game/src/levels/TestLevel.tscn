@@ -45,16 +45,16 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 } ]
 0/z_index = 0
 
-[sub_resource type="ConvexPolygonShape2D" id=9]
+[sub_resource type="ConvexPolygonShape2D" id=4]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 
-[sub_resource type="ConvexPolygonShape2D" id=10]
+[sub_resource type="ConvexPolygonShape2D" id=5]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 
-[sub_resource type="ConvexPolygonShape2D" id=11]
+[sub_resource type="ConvexPolygonShape2D" id=6]
 points = PoolVector2Array( 9.38066, 4.34169, 16.1639, 21.2029, 27.0171, 37.6764, 38.064, 48.7234, 49.8862, 54.3438, 64, 64, 0, 64, 0, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=12]
+[sub_resource type="ConvexPolygonShape2D" id=7]
 points = PoolVector2Array( 64, 0, 64, 64, 0, 64, 10.1559, 51.8243, 20.2338, 45.8163, 29.7304, 37.095, 40.3897, 20.04, 53.3748, 5.50453 )
 
 [sub_resource type="TileSet" id=8]
@@ -70,7 +70,7 @@ points = PoolVector2Array( 64, 0, 64, 64, 0, 64, 10.1559, 51.8243, 20.2338, 45.8
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 9 ),
+"shape": SubResource( 4 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 12/z_index = 0
@@ -86,7 +86,7 @@ points = PoolVector2Array( 64, 0, 64, 64, 0, 64, 10.1559, 51.8243, 20.2338, 45.8
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 10 ),
+"shape": SubResource( 5 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 13/z_index = 0
@@ -142,7 +142,7 @@ points = PoolVector2Array( 64, 0, 64, 64, 0, 64, 10.1559, 51.8243, 20.2338, 45.8
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 11 ),
+"shape": SubResource( 6 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 18/z_index = 0
@@ -158,7 +158,7 @@ points = PoolVector2Array( 64, 0, 64, 64, 0, 64, 10.1559, 51.8243, 20.2338, 45.8
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 12 ),
+"shape": SubResource( 7 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 19/z_index = 0
