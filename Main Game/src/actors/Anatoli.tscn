@@ -17,19 +17,9 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 8 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 4.0
-}, {
-"frames": [ ExtResource( 12 ) ],
-"loop": true,
-"name": "Jump",
-"speed": 5.0
-}, {
 "frames": [  ],
 "loop": false,
-"name": "Hurt",
+"name": "Dead",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 11 ) ],
@@ -37,20 +27,25 @@ animations = [ {
 "name": "Fall",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 4.0
+}, {
+"frames": [  ],
+"loop": false,
+"name": "Hurt",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 9 ) ],
 "loop": false,
 "name": "Walk",
 "speed": 5.0
 }, {
-"frames": [  ],
-"loop": false,
-"name": "Dead",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 10 ), ExtResource( 10 ), ExtResource( 10 ), ExtResource( 10 ) ],
+"frames": [ ExtResource( 12 ) ],
 "loop": true,
-"name": "Sprint",
-"speed": 4.0
+"name": "Jump",
+"speed": 5.0
 }, {
 "frames": [ ExtResource( 13 ) ],
 "loop": false,
@@ -66,6 +61,11 @@ animations = [ {
 "loop": false,
 "name": "Stand",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 10 ), ExtResource( 10 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "Sprint",
+"speed": 4.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
