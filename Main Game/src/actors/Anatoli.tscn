@@ -24,15 +24,10 @@ animations = [ {
 "name": "Dead",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 8 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 4.0
-}, {
-"frames": [  ],
+"frames": [ ExtResource( 4 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": false,
-"name": "Hurt",
-"speed": 5.0
+"name": "Turn",
+"speed": 30.0
 }, {
 "frames": [ ExtResource( 14 ), ExtResource( 14 ), ExtResource( 14 ), ExtResource( 14 ) ],
 "loop": false,
@@ -49,25 +44,30 @@ animations = [ {
 "name": "Fall",
 "speed": 5.0
 }, {
+"frames": [  ],
+"loop": false,
+"name": "Hurt",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 10 ), ExtResource( 10 ), ExtResource( 10 ), ExtResource( 10 ) ],
 "loop": true,
 "name": "Sprint",
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 13 ) ],
+"loop": false,
+"name": "Crouch",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "Idle",
 "speed": 4.0
 }, {
 "frames": [ ExtResource( 15 ), ExtResource( 16 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "Walk",
 "speed": 8.0
-}, {
-"frames": [ ExtResource( 4 ), ExtResource( 6 ), ExtResource( 7 ) ],
-"loop": false,
-"name": "Turn",
-"speed": 30.0
-}, {
-"frames": [ ExtResource( 13 ) ],
-"loop": false,
-"name": "Crouch",
-"speed": 5.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
@@ -90,7 +90,7 @@ shape = SubResource( 2 )
 [node name="Camera2D" type="Camera2D" parent="CollisionShape2D"]
 position = Vector2( 2.61472, -0.164101 )
 current = true
-zoom = Vector2( 0.7, 0.7 )
+zoom = Vector2( 0.65, 0.65 )
 limit_left = 0
 limit_top = 0
 limit_right = 3000

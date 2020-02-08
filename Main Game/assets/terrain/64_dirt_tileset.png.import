@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/64_grass.png-cab4c528eb49565adb2aea2af1adb9e2.stex"
+path="res://.import/64_dirt_tileset.png-ba3e57162124a70340113199a4e29c29.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/terrain/64_grass.png"
-dest_files=[ "res://.import/64_grass.png-cab4c528eb49565adb2aea2af1adb9e2.stex" ]
+source_file="res://assets/terrain/64_dirt_tileset.png"
+dest_files=[ "res://.import/64_dirt_tileset.png-ba3e57162124a70340113199a4e29c29.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
