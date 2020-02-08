@@ -14,7 +14,7 @@ func _physics_process(delta):
 		$AnimatedSprite.play("Idle")
 	elif Input.is_action_pressed("move_right"):
 		velocity.x = SPEED
-		$AnimatedSprite.play("Turn")
+		$AnimatedSprite.play("Walk")
 		$AnimatedSprite.flip_h = false
 	elif Input.is_action_pressed("move_left"):
 		velocity.x = -SPEED
